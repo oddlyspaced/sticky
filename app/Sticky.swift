@@ -797,7 +797,7 @@ struct LogTab: View {
                                     .font(.system(size: 10.5)).foregroundStyle(.tertiary)
                             }
                             .padding(.horizontal, 14).padding(.top, 10).padding(.bottom, 5)
-                            .background(.regularMaterial)
+                            .background(Color(nsColor: .windowBackgroundColor))
                         }
                     }
                 }
@@ -892,6 +892,8 @@ struct Panel: View {
             if tab == 0 { ListTab() } else { LogTab() }
         }
         .frame(width: 340)
+        // Solid panel: no translucent, blurred desktop behind the content.
+        .background(Color(nsColor: .windowBackgroundColor))
         .onAppear { store.reload() }
     }
 
