@@ -1,0 +1,8 @@
+# Personal data: never commit
+items.json
+log.jsonl
+.lock
+*.tmp
+
+# Build output
+.build/
