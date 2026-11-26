@@ -6,9 +6,9 @@ the log shows that Claude made the change.
 
 ```
 sticky --source claude add "Renew SSL cert #ops" "Reply to Priya"   # one item per argument
-sticky --source claude add -t swish "Ship PR"        # -t/--tag tags every new item
+sticky --source claude add -t work "Ship PR"        # -t/--tag tags every new item
 sticky --source claude add -r "2:50pm" "Interview"   # -r/--remind: 14:50, 2:50pm, tomorrow 9am, +30m, 2026-12-01 10:00
-sticky list            # numbered; --open hides ticked; --tag swish filters
+sticky list            # numbered; --open hides ticked; --tag work filters
 sticky --source claude done 2        # number, id, or unique text fragment
 sticky --source claude undo 2
 sticky --source claude rm "SSL"
